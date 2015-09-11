@@ -8,6 +8,7 @@
       var s;
       s = (document.body || document.documentElement).style;
       animationEndSupport = s.animation !== void 0 || s.WebkitAnimation !== void 0 || s.MozAnimation !== void 0 || s.MsAnimation !== void 0 || s.OAnimation !== void 0;
+      animationEndSupport = false;
       return $(window).bind('keyup.vex', function(event) {
         if (event.keyCode === 27) {
           return vex.closeByEscape();
